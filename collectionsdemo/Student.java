@@ -26,9 +26,28 @@ public class Student {
         students.add(new Student("Charlie", 3.6));
         students.add(new Student("Sam", 3.7));
 
-//        students.sort(null);
-//Here sort(null) will not work, no natural sorting for the Student class, not implementing comparable
 
+        //custom comparator using lambda expression
+        //descending sort (objects)
+         students.sort(((o1, o2) ->{
+             if(o2.getGpa() - o1.getGpa() > 0){
+                 return 1;
+             }
+             else if(o2.getGpa() - o1.getGpa() < 0){
+                 return -1;
+             }
+             else {
+                 return 0;
+             }
+         }));
+
+         for (Student student: students){
+             System.out.println(student.getName()+".."+student.getGpa());
+         }
     }
 }
 
+
+
+
+//students.sort(null);            will not work, no natural sorting for the Student class, not implementing comparable interface
