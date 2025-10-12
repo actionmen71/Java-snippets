@@ -18,7 +18,7 @@ public class DemoHashMap {
 
 //        String s = map.get(409);
 //        System.out.println(s);
-        //OP    null
+        //mypackage.OP    null
 
         System.out.println("contains key 2: "+map.containsKey(2));
 
@@ -34,7 +34,7 @@ public class DemoHashMap {
         map.put(2,"Mahi");
         map.remove(69);
         boolean res = map.remove(69, "Bablu");
-        System.out.println(res); //OP false, doesn't exist
+        System.out.println(res); //mypackage.OP false, doesn't exist
 
         System.out.println();
         Set<Map.Entry<Integer, String>> entries = map.entrySet();

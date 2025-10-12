@@ -13,28 +13,28 @@ public class DemoSet {
         set.add(3);
         set.add(1);
         set.add(0);
-        System.out.println(set);  //OP [1, 3] unordered
+        System.out.println(set);  //mypackage.OP [1, 3] unordered
         LinkedHashSet<Integer> set2 = new LinkedHashSet<>();
         set2.add(1);
         set2.add(67);
         set2.add(3);
         set2.add(1);
         set2.add(0);
-        System.out.println(set2); //OP [1, 67, 3, 0] ordered
+        System.out.println(set2); //mypackage.OP [1, 67, 3, 0] ordered
         TreeSet<Integer> set3 = new TreeSet<>();
         set3.add(1);
         set3.add(67);
         set3.add(3);
         set3.add(1);
         set3.add(0);
-        System.out.println(set3); //OP [0, 1, 3, 67]  natural sorting order
+        System.out.println(set3); //mypackage.OP [0, 1, 3, 67]  natural sorting order
         NavigableSet<Integer> set4 = new TreeSet<>();
         set4.add(1);
         set4.add(67);
         set4.add(3);
         set4.add(1);
         set4.add(0);
-        System.out.println(set4);  //OP [0, 1, 3, 67]  natural sorting order
+        System.out.println(set4);  //mypackage.OP [0, 1, 3, 67]  natural sorting order
 
         for (Integer i : set) {
             System.out.println(i);

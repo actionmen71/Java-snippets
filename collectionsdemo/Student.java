@@ -50,4 +50,4 @@ public class Student {
 
 
 
-//students.sort(null);            will not work, no natural sorting for the Student class, not implementing comparable interface
+//students.sort(null);            will not work, no natural sorting for the mypackage.Student class, not implementing comparable interface
